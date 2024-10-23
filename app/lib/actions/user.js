@@ -18,8 +18,8 @@ export const createOrUpdateUser = async (
           firstName: first_name,
           lastName: last_name,
           avatar: image_url,
-          email: email_addresses[0].email_addresses,
-          username,
+          email: email_addresses[0].email,
+          username: username,
         },
       },
       { new: true, upsert: true }
